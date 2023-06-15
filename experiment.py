@@ -1,19 +1,18 @@
 import matplotlib.pyplot as plt
 import nltk.tokenize
 import numpy as np
-import torch
 import torch.nn as nn
 from datetime import datetime
 
 from IPython.core.display_functions import display
 from tqdm import tqdm
 
-import caption_utils
-from caption_utils import *
-from constants import ROOT_STATS_DIR
-from dataset_factory import get_datasets
-from file_utils import *
-from model_factory import get_model
+from utils import caption_utils
+from utils.caption_utils import *
+from utils.constants import ROOT_STATS_DIR
+from utils.dataset_factory import get_datasets
+from utils.file_utils import *
+from model.model_factory import get_model
 
 from torchvision import transforms
 
